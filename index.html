@@ -7,18 +7,45 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Pet Adoption</title>
 </head>
-<body class="h-screen font-['Dosis'] w-full bg-white">
+<body class="h-screen font-['Dosis'] w-full bg-white sm:overflow- sm:px-20">
 
-    <nav class="w-full h-16 border-b-2 border-opacity-20 border-black">
+    <nav class="w-full h-16 sm:h-20  border-b-2 border-opacity-20 border-black sm:border-none">
 
         <div class="flex text-purpletext text-3xl w-full h-full px-4 justify-between items-center">
             <img class="scale-125" src="./src/assets/Logo (1).png" alt="">
-            <i class="ri-menu-line"></i>
+            <i class="ri-menu-line sm:hidden"></i>
+            
+
+
+            
+                <ul class="hidden sm:flex gap-5 text-black font-semibold text-base">
+                    <li><a class="hover:text-purpletext" href="#">Home</a></li>
+                    <li><a class="hover:text-purpletext" href="#">About</a></li>
+                    <li><a class="hover:text-purpletext" href="#">Service</a></li>
+                    <li><a class="hover:text-purpletext" href="#">Gallery</a></li>
+                    <li><a class="hover:text-purpletext" href="#">Contact</a></li>
+                </ul>
+          
+    
+    
+  
+                <button class="hover:opacity-80 transition-opacity ease-linear  hidden sm:block bg-purplebg text-lg w-32 py-2 font-medium text-white rounded-3xl ">
+                    Get Started
+                    
+            </button>
+          
+
+
         </div>
+
+        
+        
+
+       
 
     </nav>
 
-    <main class="h-full  w-full px-4 py-4 flex flex-col gap-14">
+    <main class="h-full items-center  w-full px-4 py-4 flex flex-col gap-14 sm:flex-row sm:justify-between sm:px-0  sm:h-[calc(100%-80px)]">
 
         <div class="gap-8 flex flex-col">   
 
@@ -38,7 +65,7 @@
 
 
             <div class="flex items-center gap-3"> 
-                <button class="bg-purplebg w-32 py-2 text-base font-medium text-white flex justify-center gap-2 items-center rounded-3xl">
+                <button class="bg-purplebg hover:opacity-80 transition-opacity ease-linear  w-32 py-2 text-base font-medium text-white flex justify-center gap-2 items-center rounded-3xl">
                     adopt now
                     <img src="./src/assets/paw.png" alt="">
                 </button>
@@ -76,8 +103,8 @@
         </div>
 
 
-        <div>
-            <img src="./src/assets/main-img.png" alt="">
+        <div class="sm:w-1/2 flex justify-end">
+            <img class="sm:w-4/5 self-end" src="./src/assets/main-img.png" alt="">
         </div>
 
     </main>
