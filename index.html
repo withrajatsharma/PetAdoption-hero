@@ -7,18 +7,18 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Pet Adoption</title>
 </head>
-<body class="h-screen font-['Dosis'] w-full bg-white sm:overflow- sm:px-20">
+<body class="h-screen font-['Dosis'] w-full bg-white  md:px-20">
 
-    <nav class="w-full h-16 sm:h-20  border-b-2 border-opacity-20 border-black sm:border-none">
+    <nav class="w-full h-16 md:h-20  border-b-2 border-opacity-20 border-black md:border-none">
 
         <div class="flex text-purpletext text-3xl w-full h-full px-4 justify-between items-center">
             <img class="scale-125" src="./src/assets/Logo (1).png" alt="">
-            <i class="ri-menu-line sm:hidden"></i>
+            <i class="ri-menu-line md:hidden"></i>
             
 
 
             
-                <ul class="hidden sm:flex gap-5 text-black font-semibold text-base">
+                <ul class="hidden md:flex gap-5 text-black font-semibold text-base">
                     <li><a class="hover:text-purpletext" href="#">Home</a></li>
                     <li><a class="hover:text-purpletext" href="#">About</a></li>
                     <li><a class="hover:text-purpletext" href="#">Service</a></li>
@@ -29,7 +29,7 @@
     
     
   
-                <button class="hover:opacity-80 transition-opacity ease-linear  hidden sm:block bg-purplebg text-lg w-32 py-2 font-medium text-white rounded-3xl ">
+                <button class="hover:opacity-80 transition-opacity ease-linear  hidden md:block bg-purplebg text-lg w-32 py-2 font-medium text-white rounded-3xl ">
                     Get Started
                     
             </button>
@@ -45,53 +45,53 @@
 
     </nav>
 
-    <main class="h-full items-center  w-full px-4 py-4 flex flex-col gap-14 sm:flex-row sm:justify-between sm:px-0  sm:h-[calc(100%-80px)]">
+    <main class="h-full items-center relative w-full px-4 py-4 flex flex-col gap-14 md:flex-row md:justify-between md:px-0  md:h-[calc(100%-80px)]">
 
-        <div class="gap-8 flex flex-col">   
+        <div class="gap-8 md:mb-20 flex flex-col h-1/2 ">   
 
 
 
             <div>
 
-                <h1 class="text-5xl mb-8 font-bold">
+                <h1 class="text-5xl md:text-8xl mb-8 font-bold">
                     Looking for a <span class="text-purpletext">good</span> time?
                 </h1>
     
-                <p class="text-base leading-tight font-medium opacity-70">
+                <p class="text-base md:text-lg md:leading-none leading-tight font-medium opacity-70">
                     Now is the time to open your heart and home to animal in need. We all want to be rescued, adopt a dog today 
                 </p>
     
             </div>
 
 
-            <div class="flex items-center gap-3"> 
-                <button class="bg-purplebg hover:opacity-80 transition-opacity ease-linear  w-32 py-2 text-base font-medium text-white flex justify-center gap-2 items-center rounded-3xl">
+            <div class="flex items-center gap-3 md:gap-10 md:my-10"> 
+                <button class="bg-purplebg hover:opacity-80 transition-opacity ease-linear md:w-40 md:py-3  w-32 py-2 md:text-lg text-base font-medium text-white flex justify-center gap-2 items-center rounded-3xl">
                     adopt now
                     <img src="./src/assets/paw.png" alt="">
                 </button>
 
-                <div class="flex items-center gap-1 cursor-pointer">
-                    <img src="./src/assets/ply-btn.png" alt="">
-                    <p class="text-purpletext text-xl font-semibold opacity-75">
+                <div class="flex items-center gap-1 md:gap-4 cursor-pointer">
+                    <img class="md:scale-125" src="./src/assets/ply-btn.png" alt="">
+                    <p class="text-purpletext text-xl md:text-3xl font-semibold opacity-75">
                         Watch Video
                     </p>
                 </div>
             </div>
 
 
-            <div class="flex gap-4">
+            <div class="flex gap-4 md:gap-16">
 
                 <div>
-                    <p class="font-bold text-3xl">299K+</p>
-                    <p class="text-lighttxt opacity-70 leading-none text-sm">Product</p>
+                    <p class="font-bold text-3xl md:text-5xl">299K+</p>
+                    <p class="text-lighttxt opacity-70 leading-none text-sm md:text-base">Product</p>
                 </div>
                 <div>
-                    <p class="font-bold text-3xl">99K+</p>
-                    <p class="text-lighttxt opacity-70 leading-none text-sm">Seller</p>
+                    <p class="font-bold text-3xl md:text-5xl">99K+</p>
+                    <p class="text-lighttxt opacity-70 leading-none text-sm md:text-base">Seller</p>
                 </div>
                 <div>
-                    <p class="font-bold text-3xl">2K+</p>
-                    <p class="text-lighttxt opacity-70 leading-none text-sm">Reviews</p>
+                    <p class="font-bold text-3xl md:text-5xl">2K+</p>
+                    <p class="text-lighttxt opacity-70 leading-none text-sm md:text-base">Reviews</p>
                 </div>
 
 
@@ -103,8 +103,8 @@
         </div>
 
 
-        <div class="sm:w-1/2 flex justify-end">
-            <img class="sm:w-4/5 self-end" src="./src/assets/main-img.png" alt="">
+        <div class="md:w-1/2 w-full  md:absolute right-0 flex justify-center md:justify-end p-4">
+            <img class="md:w-4/5 relative md:top-0 " src="./src/assets/main-img.png" alt="">
         </div>
 
     </main>
